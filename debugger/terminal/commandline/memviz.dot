@@ -1,0 +1,19 @@
+digraph structs {
+  node [shape=Mrecord];
+  12 [label="<name> node |{<f0> tag | \"QUX\"} |{<f1> placeholderLabel | \"\"} |{<f2> typ | 2} |{<f3> next | []*commandline.node\{\}} |{<f4> branch | []*commandline.node\{\}} |{<f5> repeatStart | false} |{<f6> repeat | *commandline.node(nil)}  "];
+  9:<11index0> -> 12:name;
+  9 [label="<name> node |{<f0> tag | \"BAZ\"} |{<f1> placeholderLabel | \"\"} |{<f2> typ | 2} |{<f3> next | []*commandline.node\{\}} |{<f4> branch | {<11index0> 0}} |{<f5> repeatStart | false} |{<f6> repeat | *commandline.node(nil)}  "];
+  18 [label="<name> node |{<f0> tag | \"B\"} |{<f1> placeholderLabel | \"\"} |{<f2> typ | 2} |{<f3> next | []*commandline.node\{\}} |{<f4> branch | []*commandline.node\{\}} |{<f5> repeatStart | false} |{<f6> repeat | *commandline.node(nil)}  "];
+  15:<17index0> -> 18:name;
+  15 [label="<name> node |{<f0> tag | \"A\"} |{<f1> placeholderLabel | \"\"} |{<f2> typ | 2} |{<f3> next | []*commandline.node\{\}} |{<f4> branch | {<17index0> 0}} |{<f5> repeatStart | false} |{<f6> repeat | *commandline.node(nil)}  "];
+  7:<8index0> -> 9:name;
+  7:<8index1> -> 15:name;
+  7 [label="<name> node |{<f0> tag | \"\"} |{<f1> placeholderLabel | \"\"} |{<f2> typ | 3} |{<f3> next | {<8index0> 0|<8index1> 1}} |{<f4> branch | []*commandline.node\{\}} |{<f5> repeatStart | false} |{<f6> repeat | *commandline.node(nil)}  "];
+  5:<6index0> -> 7:name;
+  5 [label="<name> node |{<f0> tag | \"BAR\"} |{<f1> placeholderLabel | \"\"} |{<f2> typ | 3} |{<f3> next | {<6index0> 0}} |{<f4> branch | []*commandline.node\{\}} |{<f5> repeatStart | false} |{<f6> repeat | *commandline.node(nil)}  "];
+  3:<4index0> -> 5:name;
+  3 [label="<name> node |{<f0> tag | \"FOO\"} |{<f1> placeholderLabel | \"\"} |{<f2> typ | 1} |{<f3> next | {<4index0> 0}} |{<f4> branch | []*commandline.node\{\}} |{<f5> repeatStart | false} |{<f6> repeat | *commandline.node(nil)}  "];
+  1:<2value0> -> 3:name;
+  1:<24index0> -> 3:name;
+  1 [label="<name> Commands |{<f0> Index | {{<2key0> \"FOO\"| <2value0> *commandline.node}}} |{<f1> cmds | {<24index0> 0}} |{<f2> helpCommand | \"\"} |{<f3> helpCols | 0} |{<f4> helpColFmt | \"\"} |{<f5> helps | map[string]string\{\}}  "];
+}
